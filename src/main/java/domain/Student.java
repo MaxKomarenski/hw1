@@ -42,6 +42,7 @@ public class Student extends BasicStudent {
                                           new JsonPair("passed", new JsonBoolean(passedMark.get(list.get(i).value))));
         }
         JsonArray js = new JsonArray(examsJason);
+
         json.add(new JsonPair("exams", js));
         return json;
     }
