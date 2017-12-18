@@ -17,6 +17,8 @@
         <checkstyle.skip>false</checkstyle.skip>
         <findbugs.skip>false</findbugs.skip>
         <checkstyle.config.location>checkstyle.xml</checkstyle.config.location>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
     <dependencies>
@@ -107,7 +109,6 @@
                 <artifactId>maven-pmd-plugin</artifactId>
                 <version>3.8</version>
                 <configuration>
-                    <linkXref>true</linkXref>
                     <sourceEncoding>UTF8</sourceEncoding>
                     <minimumTokens>30</minimumTokens>
                     <targetJdk>1.7</targetJdk>
@@ -126,9 +127,5 @@
         </plugins>
     </build>
 
-    <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-    </properties>
 
 </project>
